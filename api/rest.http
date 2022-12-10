@@ -1,0 +1,31 @@
+### get all users
+GET http://localhost:8000/users
+
+
+### get all users
+POST  http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "fName": "wret",
+    "lName": "Acharya",
+    "email": "qead@a.com",
+    "password": "12345"
+}
+
+  
+
+### updaet  a user
+PUT http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "_id": "6393d052641cbd6a2152c5f7",
+     "fName": "sam",
+    "lName": "smith",
+    "password": "heheheheh"
+}
+
+  
+### delete single user by user _id
+DELETE  http://localhost:8000/users/6393d052641cbd6a2152c5f7
